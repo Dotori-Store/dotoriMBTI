@@ -1,0 +1,90 @@
+{
+  "resultImages": {
+    "INTJ": "./images/INTJ.svg",
+    "INTP": "./images/INTP.svg",
+    "ENTJ": "./images/ENTJ.svg",
+    "ENTP": "./images/ENTP.svg",
+    "INFJ": "./images/INFJ.svg",
+    "INFP": "./images/INFP.svg",
+    "ENFJ": "./images/ENFJ.svg",
+    "ENFP": "./images/ENFP.svg",
+    "ISTJ": "./images/ISTJ.svg",
+    "ISFJ": "./images/ISFJ.svg",
+    "ESTJ": "./images/ESTJ.svg",
+    "ESFJ": "./images/ESFJ.svg",
+    "ISTP": "./images/ISTP.svg",
+    "ISFP": "./images/ISFP.svg",
+    "ESTP": "./images/ESTP.svg",
+    "ESFP": "./images/ESFP.svg"
+  },
+  "tests": [
+    {
+      "id": "mbti_a",
+      "title": "학교에서 마음 타입 알아보기 (A)",
+      "desc": "학교, 숙제, 놀이터에서의 행동을 기준으로 한 테스트예요.",
+      "questions": [
+        { "q": "쉬는 시간에 친구들이 모이면 주로 뭐해요?", "options": [ { "text": "먼저 가서 놀잇감을 나눈다", "scores": { "ENFP": 1 } }, { "text": "모두 오는지 보고 조용히 있다", "scores": { "INTJ": 1 } }, { "text": "친구들 잘 지켜보며 돕는다", "scores": { "ISFJ": 1 } } ] },
+        { "q": "숙제를 할 때 어떤 방식이 좋아요?", "options": [ { "text": "먼저 끝내고 놀고 싶다", "scores": { "ENFP": 1 } }, { "text": "계획표 만들어서 차근차근 한다", "scores": { "INTJ": 1 } }, { "text": "친구랑 같이 맞춰가며 한다", "scores": { "ISFJ": 1 } } ] },
+        { "q": "운동장에서 새로운 놀이를 보면 어떻게 해요?", "options": [ { "text": "바로 들어가서 시도해본다", "scores": { "ENFP": 1 } }, { "text": "먼저 지켜보다가 규칙을 파악한다", "scores": { "INTJ": 1 } }, { "text": "누군가 다치지 않게 조심스럽게 돕는다", "scores": { "ISFJ": 1 } } ] },
+        { "q": "친구가 슬퍼하면 어떻게 하나요?", "options": [ { "text": "먼저 다가가 같이 놀아준다", "scores": { "ENFP": 1 } }, { "text": "무슨 일이 있는지 차분히 물어본다", "scores": { "ISFJ": 1 } }, { "text": "혼자 있는 게 맞는지 지켜본다", "scores": { "INTJ": 1 } } ] },
+        { "q": "새로운 문제를 만나면 어떻게 해요?", "options": [ { "text": "재미있다! 바로 시도해본다", "scores": { "ENFP": 1 } }, { "text": "방법을 생각해 차근차근 해결한다", "scores": { "INTJ": 1 } }, { "text": "다른 친구들과 상의한다", "scores": { "ISFJ": 1 } } ] },
+        { "q": "선생님이 갑자기 시키면?", "options": [ { "text": "신나서 바로 참여한다", "scores": { "ENFP": 1 } }, { "text": "왜 시키는지 이유를 먼저 생각한다", "scores": { "INTJ": 1 } }, { "text": "선생님 말씀을 잘 따라 한다", "scores": { "ISFJ": 1 } } ] },
+        { "q": "팀 활동에서 역할을 맡으면 어떤 걸 해요?", "options": [ { "text": "모두가 즐겁게 하도록 분위기 만든다", "scores": { "ENFP": 1 } }, { "text": "계획을 세워 진행한다", "scores": { "INTJ": 1 } }, { "text": "모두가 불편하지 않게 도와준다", "scores": { "ISFJ": 1 } } ] },
+        { "q": "학교에 새로운 규칙이 생기면?", "options": [ { "text": "괜찮아, 재미있게 해볼래", "scores": { "ENFP": 1 } }, { "text": "왜 만드는지 이유를 알고 싶다", "scores": { "INTJ": 1 } }, { "text": "먼저 규칙을 잘 지키려 노력한다", "scores": { "ISFJ": 1 } } ] },
+        { "q": "친구가 모임을 안 지키면 어떻게 해요?", "options": [ { "text": "다 같이 재밌게 끌어넣으려 한다", "scores": { "ENFP": 1 } }, { "text": "다음엔 더 잘하자고 이야기한다", "scores": { "ISFJ": 1 } }, { "text": "원인부터 생각해 본다", "scores": { "INTJ": 1 } } ] },
+        { "q": "쉬는 시간에 혼자 있고 싶을 땐?", "options": [ { "text": "친구 부르러 간다", "scores": { "ENFP": 1 } }, { "text": "혼자 조용히 책을 본다", "scores": { "INTJ": 1 } }, { "text": "가까운 친구 한 명과만 논다", "scores": { "ISFJ": 1 } } ] }
+      ]
+    },
+    {
+      "id": "mbti_b",
+      "title": "친구랑 노는 스타일 알아보기 (B)",
+      "desc": "친구와의 행동을 중심으로 하는 테스트예요.",
+      "questions": [
+        { "q": "친구 모임에서 중심이 되나요?", "options": [ { "text": "네, 중심이 된다", "scores": { "ENFP": 1 } }, { "text": "아니요, 조용히 있는 편이다", "scores": { "INTJ": 1 } }, { "text": "필요할 때만 참여한다", "scores": { "ISFJ": 1 } } ] },
+        { "q": "불편한 상황에서 자신의 감정을 솔직히 표현하나요?", "options": [ { "text": "솔직히 표현한다", "scores": { "ENFP": 1 } }, { "text": "조심스럽게 표현한다", "scores": { "ISFJ": 1 } }, { "text": "논리적으로 정리해서 말한다", "scores": { "INTJ": 1 } } ] },
+        { "q": "사교적 에너지를 회복하려면 어떻게 하나요?", "options": [ { "text": "사람들과 어울린다", "scores": { "ENFP": 1 } }, { "text": "혼자 시간을 가진다", "scores": { "INTJ": 1 } }, { "text": "소수의 친한 사람과 만난다", "scores": { "ISFJ": 1 } } ] },
+        { "q": "새로운 모임에 초대받았을 때 행동은?", "options": [ { "text": "바로 수락한다", "scores": { "ENFP": 1 } }, { "text": "상황을 보고 결정한다", "scores": { "ISFJ": 1 } }, { "text": "미리 계획을 세워 준비한다", "scores": { "INTJ": 1 } } ] },
+        { "q": "갈등 상황에서 주로 어떤 역할을 하나요?", "options": [ { "text": "중재하고 조율한다", "scores": { "ISFJ": 1 } }, { "text": "솔직하게 문제를 지적한다", "scores": { "INTJ": 1 } }, { "text": "감정을 표현하며 풀어간다", "scores": { "ENFP": 1 } } ] },
+        { "q": "새로운 사람과 빨리 친해지는 편인가요?", "options": [ { "text": "네, 바로 친구가 된다", "scores": { "ENFP": 1 } }, { "text": "천천히 친해진다", "scores": { "INTJ": 1 } }, { "text": "한두 명만 같이 놀자고 한다", "scores": { "ISFJ": 1 } } ] },
+        { "q": "친구와 약속 잡을 때 주로 어떻게 해요?", "options": [ { "text": "그때그때 즉흥적으로 정한다", "scores": { "ENFP": 1 } }, { "text": "시간과 장소를 미리 정한다", "scores": { "INTJ": 1 } }, { "text": "친구들과 상의해서 정한다", "scores": { "ISFJ": 1 } } ] },
+        { "q": "친구의 작은 변화를 잘 알아채나요?", "options": [ { "text": "네, 금방 알아챈다", "scores": { "ISFJ": 1 } }, { "text": "가끔 알아챈다", "scores": { "ENFP": 1 } }, { "text": "무슨 변화인지 이유를 생각한다", "scores": { "INTJ": 1 } } ] },
+        { "q": "놀이에서 역할을 맡으면 주로 어떤 걸 하나요?", "options": [ { "text": "모두가 웃게 하는 역할", "scores": { "ENFP": 1 } }, { "text": "계획을 세워 진행하는 역할", "scores": { "INTJ": 1 } }, { "text": "모두가 편하게 놀도록 돕는다", "scores": { "ISFJ": 1 } } ] },
+        { "q": "친구들이 나를 믿는다고 느끼나요?", "options": [ { "text": "네, 친구들이 좋아해준다", "scores": { "ISFJ": 1 } }, { "text": "가끔 그런 편이다", "scores": { "ENFP": 1 } }, { "text": "믿음을 얻으려 노력한다", "scores": { "INTJ": 1 } } ] }
+      ]
+    },
+    {
+      "id": "mbti_c",
+      "title": "생각하는 방법 알아보기 (C)",
+      "desc": "문제 해결과 새로운 아이디어에 대한 반응을 보는 테스트예요.",
+      "questions": [
+        { "q": "수학 문제를 못 풀면 먼저 뭐해요?", "options": [ { "text": "다른 방법으로 한번 시도해본다", "scores": { "ENFP": 1 } }, { "text": "공책을 보고 차근차근 푼다", "scores": { "INTJ": 1 } }, { "text": "친구에게 도움을 요청한다", "scores": { "ISFJ": 1 } } ] },
+        { "q": "선생님이 새 활동을 시키면 어떻게 해요?", "options": [ { "text": "와 재밌겠다! 바로 해본다", "scores": { "ENFP": 1 } }, { "text": "먼저 규칙을 잘 확인한다", "scores": { "INTJ": 1 } }, { "text": "친구들과 상의하며 참여한다", "scores": { "ISFJ": 1 } } ] },
+        { "q": "수업 중 궁금한 게 있으면?", "options": [ { "text": "바로 손 들고 질문한다", "scores": { "ENFP": 1 } }, { "text": "집에 가서 혼자 찾아본다", "scores": { "INTJ": 1 } }, { "text": "수업 끝나고 친구랑 이야기한다", "scores": { "ISFJ": 1 } } ] },
+        { "q": "새로운 게임 규칙을 만들 때 주로 뭐해요?", "options": [ { "text": "새롭고 재미있게 바꾼다", "scores": { "ENFP": 1 } }, { "text": "규칙이 공평한지 생각한다", "scores": { "INTJ": 1 } }, { "text": "모두가 이해할 수 있게 정리한다", "scores": { "ISFJ": 1 } } ] },
+        { "q": "친구가 아이디어를 말하면 당신은?", "options": [ { "text": "우와 재미있다, 바로 해보자", "scores": { "ENFP": 1 } }, { "text": "이게 잘 될지 생각해본다", "scores": { "INTJ": 1 } }, { "text": "친구 기분을 먼저 살핀다", "scores": { "ISFJ": 1 } } ] },
+        { "q": "새로운 것을 배우려면 보통 어떻게 하나요?", "options": [ { "text": "바로 시도해보며 배운다", "scores": { "ENFP": 1 } }, { "text": "방법을 정해 천천히 배운다", "scores": { "INTJ": 1 } }, { "text": "친구와 같이 배우는 걸 좋아한다", "scores": { "ISFJ": 1 } } ] },
+        { "q": "숙제할 때 틀린 문제를 만나면?", "options": [ { "text": "다른 방법으로 풀어본다", "scores": { "ENFP": 1 } }, { "text": "잘못한 이유를 찾아서 고친다", "scores": { "INTJ": 1 } }, { "text": "선생님께 물어본다", "scores": { "ISFJ": 1 } } ] },
+        { "q": "실수했을 때 주로 어떻게 하나요?", "options": [ { "text": "괜찮아, 다음엔 재밌게 해보자", "scores": { "ENFP": 1 } }, { "text": "무엇이 잘못됐는지 분석한다", "scores": { "INTJ": 1 } }, { "text": "먼저 사과하고 도와준다", "scores": { "ISFJ": 1 } } ] },
+        { "q": "친구가 한 말이 이상하면?", "options": [ { "text": "바로 반응하고 장난친다", "scores": { "ENFP": 1 } }, { "text": "왜 그런지 이유를 생각해본다", "scores": { "INTJ": 1 } }, { "text": "친구 기분을 살펴본다", "scores": { "ISFJ": 1 } } ] },
+        { "q": "새로운 규칙을 생각해낼 때 무엇을 먼저 보나요?", "options": [ { "text": "재미있고 신나는지", "scores": { "ENFP": 1 } }, { "text": "모두에게 공평한지", "scores": { "INTJ": 1 } }, { "text": "친구들이 불편하지는 않은지", "scores": { "ISFJ": 1 } } ] }
+      ]
+    },
+    {
+      "id": "mbti_d",
+      "title": "실용적인 생활 스타일 (D)",
+      "desc": "일상과 놀이에서의 성향을 보는 테스트예요.",
+      "questions": [
+        { "q": "아침에 일어나면 어떻게 준비해요?", "options": [ { "text": "일어나자마자 신나게 준비한다", "scores": { "ENFP": 1 } }, { "text": "정해진 순서대로 차근차근 준비한다", "scores": { "ISFJ": 1 } }, { "text": "빠르게 준비해서 시간을 절약한다", "scores": { "INTJ": 1 } } ] },
+        { "q": "숙제할 때 무엇을 먼저 하나요?", "options": [ { "text": "재미있는 것부터 한다", "scores": { "ENFP": 1 } }, { "text": "어려운 것부터 차근히 한다", "scores": { "INTJ": 1 } }, { "text": "먼저 필요한 도구를 준비한다", "scores": { "ISFJ": 1 } } ] },
+        { "q": "운동장에서 놀 때 안전은 어떻게 생각하나요?", "options": [ { "text": "조금 위험해도 재밌으면 해본다", "scores": { "ENFP": 1 } }, { "text": "안전하게 하는 게 먼저다", "scores": { "ISFJ": 1 } }, { "text": "효율적으로 공간을 나눠 쓴다", "scores": { "INTJ": 1 } } ] },
+        { "q": "친구와 역할을 나눌 때 주로 뭐해요?", "options": [ { "text": "모두가 즐겁게 하게끔 한다", "scores": { "ENFP": 1 } }, { "text": "세부 일을 책임지고 한다", "scores": { "ISFJ": 1 } }, { "text": "어떻게 하면 제일 빨리 끝낼지 생각한다", "scores": { "INTJ": 1 } } ] },
+        { "q": "새 물건을 사려면 어떻게 결정하나요?", "options": [ { "text": "바로 사고 싶다", "scores": { "ENFP": 1 } }, { "text": "필요한지 먼저 생각한다", "scores": { "ISFJ": 1 } }, { "text": "가성비를 따져 결정한다", "scores": { "INTJ": 1 } } ] },
+        { "q": "친구가 약속을 어기면?", "options": [ { "text": "다음엔 같이 즐겁게 놀자고 한다", "scores": { "ENFP": 1 } }, { "text": "이유를 물어보고 이해하려 한다", "scores": { "ISFJ": 1 } }, { "text": "다음엔 꼭 지키게 계획을 세운다", "scores": { "INTJ": 1 } } ] },
+        { "q": "새로운 규칙이 있으면 어떻게 해요?", "options": [ { "text": "한번 해보고 판단한다", "scores": { "ENFP": 1 } }, { "text": "먼저 규칙을 잘 지킨다", "scores": { "ISFJ": 1 } }, { "text": "왜 필요한지 분석해본다", "scores": { "INTJ": 1 } } ] },
+        { "q": "집안일을 도우라고 하면?", "options": [ { "text": "재밌게 같이 한다", "scores": { "ENFP": 1 } }, { "text": "정해진 순서로 착실히 한다", "scores": { "ISFJ": 1 } }, { "text": "효율적으로 나눠서 한다", "scores": { "INTJ": 1 } } ] },
+        { "q": "친구와 계획을 세울 때 주로 어떤 역할을 해요?", "options": [ { "text": "분위기를 띄우고 아이디어 낸다", "scores": { "ENFP": 1 } }, { "text": "모든 것을 정리하고 책임진다", "scores": { "ISFJ": 1 } }, { "text": "계획이 쓰일 최적의 방법을 찾는다", "scores": { "INTJ": 1 } } ] },
+        { "q": "가장 좋아하는 쉬는 시간 활동은?", "options": [ { "text": "친구들과 뛰어논다", "scores": { "ENFP": 1 } }, { "text": "조용히 책 읽기", "scores": { "INTJ": 1 } }, { "text": "친구 도와주기", "scores": { "ISFJ": 1 } } ] }
+      ]
+    }
+  ]
+}

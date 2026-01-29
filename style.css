@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'SchoolSafetyStarrySky';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimByeolbichhaneulTTF-B.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, section, summary, textarea,
+time, mark, audio, video, select, button, input {
+  color: #242424;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-style: normal;
+  line-height: 1.4em;
+  font-family: 'Pretendard GOV', '-apple-system', 'BlinkMacSystemFont', 'Apple SD Gothic Neo', 'Segoe UI', 'Roboto', sans-serif;
+}
+
+body {
+  background: #ede9dd;
+  min-height: 100vh;
+}
+
+img { max-width: 100%; vertical-align: top; }
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 0 16px 0;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'SchoolSafetyStarrySky', sans-serif;
+}
+
+h1 i {
+  font-size: 18px;
+}
+
+h1 i:first-child {
+  transform: scaleX(-1);
+}
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 32px 0;
+  font-size: 14px;
+  color: #888;
+}
+
+/* Typography */
+.text-doit {
+  color: #5f6166;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+/* 테스트 리스트 - 바둑판(grid) */
+#testsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#testsList li {
+  background: #fafafa;
+  border: 1px solid #eee;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.test-card {
+  display: block;
+  text-align: left;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.test-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.test-desc {
+  color: #666;
+  font-size: 0.95rem;
+  margin-top: auto;
+}
+
+/* 퀴즈/옵션 */
+/* 숨김은 HTML의 `hidden` 속성으로 제어합니다 */
+section[hidden] {
+  display: none;
+}
+
+#options {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 1.25rem 0;
+}
+
+button {
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.option-btn.selected {
+  background: #0078d4;
+  color: #fff;
+  border-color: #0078d4;
+}
+
+.option-btn.muted {
+  background: #f1f1f1;
+  color: #888;
+  border-color: #ececec;
+}
+
+#complete {
+  padding: 1rem 0;
+}
+
+#result {
+  padding: 1rem 0;
+}
+
+.bottom-home {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 40px 0;
+}
+
+.home-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 68px;
+  height: 68px;
+  border: 1px solid #ccc;
+  border-radius: 16px; 
+  font-size: 20px;
+  font-weight: 600;
+}
