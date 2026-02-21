@@ -16,46 +16,7 @@
   <main>
     <!-- 시작 화면: 테스트 목록 (바둑판) -->
     <section id="tests">
-      <p class="text-doit">뭐하냐. 하고 싶은 테스트 골라.<br>근데 너 몇살이냐?</p>
       <ul id="testsList"></ul>
-    </section>
-
-    <!-- 퀴즈 화면 -->
-    <section id="quiz" hidden>
-      <div style="display:flex; align-items:center; gap:1rem;">
-        <div id="progress">문항 1 / 1</div>
-      </div>
-      <h2 id="question"></h2>
-      <ul id="options"></ul>
-      <div class="controls">
-        <button id="prevBtn">이전</button>
-        <button id="nextBtn">다음</button>
-      </div>
-      <div class="bottom-home"><button id="homeBtn" class="home-btn">🏠</button></div>
-    </section>
-
-    <!-- 완료(결과보기) 화면 -->
-    <section id="complete" hidden>
-      <div style="display:flex; align-items:center; gap:1rem;">
-        <div>모든 테스트를 완료했어요. 결과를 볼까요?</div>
-        <button id="viewResultBtn">결과 보기</button>
-        <button id="homeBtnComplete" class="home-btn">처음으로</button>
-      </div>
-    </section>
-
-    <!-- 결과 화면 -->
-    <section id="result" hidden>
-      <div style="display:flex; align-items:center; gap:1rem;">
-        <h2 id="resultTitle"></h2>
-        <button id="homeBtnResult" class="home-btn">처음으로</button>
-      </div>
-      <p id="resultText"></p>
-      <div>
-        <img id="resultImage" src="" alt="결과 이미지" style="max-width:240px; display:none; margin-top:0.5rem; border-radius:8px; border:1px solid #eee;" />
-      </div>
-        <div style="margin-top:1rem;">
-        <button id="restartBtn">다시 해보기</button>
-      </div>
     </section>
   </main>
 
@@ -63,6 +24,7 @@
     © 도토리의 MBTI 테스트
   </footer>
 
+  <script src="./data/tests.js"></script>
   <script src="./scripts/main.js"></script>
 </body>
 </html>
