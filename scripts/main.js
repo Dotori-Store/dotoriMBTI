@@ -1,6 +1,13 @@
-document.addEventListener('DOMContentLoaded', function () {
-  // Use global variable from tests.js instead of fetch
-  const tests = typeof TESTS_DATA !== 'undefined' ? TESTS_DATA.tests : [];
+document.addEventListener('DOMContentLoaded', async function () {
+  let tests = [];
+
+  try {
+    const response = await fetch('./data/tests.json');
+    const data = await response.json();
+    tests = data.tests || [];
+  } catch (error) {
+    console.error('Failed to load tests.json:', error);
+  }
 
   const el = {
     testsSection: document.getElementById('tests'),

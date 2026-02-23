@@ -1,89 +1,273 @@
 {
   "resultImages": {
-    "INTJ": "./images/INTJ.svg",
-    "INTP": "./images/INTP.svg",
-    "ENTJ": "./images/ENTJ.svg",
-    "ENTP": "./images/ENTP.svg",
-    "INFJ": "./images/INFJ.svg",
-    "INFP": "./images/INFP.svg",
-    "ENFJ": "./images/ENFJ.svg",
-    "ENFP": "./images/ENFP.svg",
-    "ISTJ": "./images/ISTJ.svg",
-    "ISFJ": "./images/ISFJ.svg",
-    "ESTJ": "./images/ESTJ.svg",
-    "ESFJ": "./images/ESFJ.svg",
-    "ISTP": "./images/ISTP.svg",
-    "ISFP": "./images/ISFP.svg",
-    "ESTP": "./images/ESTP.svg",
-    "ESFP": "./images/ESFP.svg"
+    "MOOD_MAKER": "https://picsum.photos/seed/party1/300/200",
+    "QUIET_OBSERVER": "https://picsum.photos/seed/party2/300/200",
+    "PLANNER": "https://picsum.photos/seed/party3/300/200",
+    "TASTER": "https://picsum.photos/seed/party4/300/200",
+    "FREE_SOUL": "https://picsum.photos/seed/travel1/300/200",
+    "GUIDE_MASTER": "https://picsum.photos/seed/travel2/300/200",
+    "RELAX_SEEKER": "https://picsum.photos/seed/travel3/300/200",
+    "LOCAL_HUNTER": "https://picsum.photos/seed/travel4/300/200",
+    "HOMEBODY": "https://picsum.photos/seed/home1/300/200",
+    "OUTBOUNDER": "https://picsum.photos/seed/out1/300/200",
+    "HOBBY_COLLECTOR": "https://picsum.photos/seed/hobby1/300/200",
+    "SOCIAL_BUTTERFLY": "https://picsum.photos/seed/social1/300/200",
+    "FOCUS_KING": "https://picsum.photos/seed/study1/300/200",
+    "BRAINSTORMER": "https://picsum.photos/seed/study2/300/200",
+    "LAST_MINUTER": "https://picsum.photos/seed/study3/300/200",
+    "CONSISTENT_RUNNER": "https://picsum.photos/seed/study4/300/200"
   },
   "tests": [
     {
-      "id": "mbti_a",
-      "title": "학교에서 마음 타입 알아보기 (A)",
-      "desc": "학교, 숙제, 놀이터에서의 행동을 기준으로 한 테스트예요.",
+      "id": "office_party",
+      "title": "회식 자리 성격 테스트",
+      "desc": "회식 상황에서의 내 선택으로 알아보는 나의 술자리 캐릭터!",
       "questions": [
-        { "q": "쉬는 시간에 친구들이 모이면 주로 뭐해요?", "options": [ { "text": "먼저 가서 놀잇감을 나눈다", "scores": { "ENFP": 1 } }, { "text": "모두 오는지 보고 조용히 있다", "scores": { "INTJ": 1 } }, { "text": "친구들 잘 지켜보며 돕는다", "scores": { "ISFJ": 1 } } ] },
-        { "q": "숙제를 할 때 어떤 방식이 좋아요?", "options": [ { "text": "먼저 끝내고 놀고 싶다", "scores": { "ENFP": 1 } }, { "text": "계획표 만들어서 차근차근 한다", "scores": { "INTJ": 1 } }, { "text": "친구랑 같이 맞춰가며 한다", "scores": { "ISFJ": 1 } } ] },
-        { "q": "운동장에서 새로운 놀이를 보면 어떻게 해요?", "options": [ { "text": "바로 들어가서 시도해본다", "scores": { "ENFP": 1 } }, { "text": "먼저 지켜보다가 규칙을 파악한다", "scores": { "INTJ": 1 } }, { "text": "누군가 다치지 않게 조심스럽게 돕는다", "scores": { "ISFJ": 1 } } ] },
-        { "q": "친구가 슬퍼하면 어떻게 하나요?", "options": [ { "text": "먼저 다가가 같이 놀아준다", "scores": { "ENFP": 1 } }, { "text": "무슨 일이 있는지 차분히 물어본다", "scores": { "ISFJ": 1 } }, { "text": "혼자 있는 게 맞는지 지켜본다", "scores": { "INTJ": 1 } } ] },
-        { "q": "새로운 문제를 만나면 어떻게 해요?", "options": [ { "text": "재미있다! 바로 시도해본다", "scores": { "ENFP": 1 } }, { "text": "방법을 생각해 차근차근 해결한다", "scores": { "INTJ": 1 } }, { "text": "다른 친구들과 상의한다", "scores": { "ISFJ": 1 } } ] },
-        { "q": "선생님이 갑자기 시키면?", "options": [ { "text": "신나서 바로 참여한다", "scores": { "ENFP": 1 } }, { "text": "왜 시키는지 이유를 먼저 생각한다", "scores": { "INTJ": 1 } }, { "text": "선생님 말씀을 잘 따라 한다", "scores": { "ISFJ": 1 } } ] },
-        { "q": "팀 활동에서 역할을 맡으면 어떤 걸 해요?", "options": [ { "text": "모두가 즐겁게 하도록 분위기 만든다", "scores": { "ENFP": 1 } }, { "text": "계획을 세워 진행한다", "scores": { "INTJ": 1 } }, { "text": "모두가 불편하지 않게 도와준다", "scores": { "ISFJ": 1 } } ] },
-        { "q": "학교에 새로운 규칙이 생기면?", "options": [ { "text": "괜찮아, 재미있게 해볼래", "scores": { "ENFP": 1 } }, { "text": "왜 만드는지 이유를 알고 싶다", "scores": { "INTJ": 1 } }, { "text": "먼저 규칙을 잘 지키려 노력한다", "scores": { "ISFJ": 1 } } ] },
-        { "q": "친구가 모임을 안 지키면 어떻게 해요?", "options": [ { "text": "다 같이 재밌게 끌어넣으려 한다", "scores": { "ENFP": 1 } }, { "text": "다음엔 더 잘하자고 이야기한다", "scores": { "ISFJ": 1 } }, { "text": "원인부터 생각해 본다", "scores": { "INTJ": 1 } } ] },
-        { "q": "쉬는 시간에 혼자 있고 싶을 땐?", "options": [ { "text": "친구 부르러 간다", "scores": { "ENFP": 1 } }, { "text": "혼자 조용히 책을 본다", "scores": { "INTJ": 1 } }, { "text": "가까운 친구 한 명과만 논다", "scores": { "ISFJ": 1 } } ] }
+        {
+          "q": "회식 장소에 도착했을 때, 당신의 자리는?",
+          "options": [
+            { "text": "사람들이 많은 중앙 자리", "scores": { "MOOD_MAKER": 1 } },
+            { "text": "조용히 나갈 수 있는 구석 자리", "scores": { "QUIET_OBSERVER": 1 } }
+          ]
+        },
+        {
+          "q": "메뉴를 정할 때, 당신은?",
+          "options": [
+            { "text": "가장 인기 있는 추천 메뉴!", "scores": { "MOOD_MAKER": 1 } },
+            { "text": "미리 리뷰를 찾아보고 가성비 좋은 메뉴", "scores": { "PLANNER": 1 } }
+          ]
+        },
+        {
+          "q": "주문한 음식이 나왔을 때!",
+          "options": [
+            { "text": "먹기 전 사진부터! 인스타 감성 샷", "scores": { "TASTER": 1 } },
+            { "text": "식기 전에 빨리 나눠주는 효율성", "scores": { "PLANNER": 1 } }
+          ]
+        },
+        {
+          "q": "회식 분위기가 무르익었을 때?",
+          "options": [
+            { "text": "건배사를 주도하고 분위기를 띄운다", "scores": { "MOOD_MAKER": 1 } },
+            { "text": "조용히 고기를 굽거나 빈 잔을 채운다", "scores": { "PLANNER": 1 } }
+          ]
+        },
+        {
+          "q": "옆 사람이 어색해 보일 때?",
+          "options": [
+            { "text": "먼저 말을 걸어 분위기를 푼다", "scores": { "MOOD_MAKER": 1 } },
+            { "text": "그저 묵묵히 들어주며 웃어준다", "scores": { "QUIET_OBSERVER": 1 } }
+          ]
+        },
+        {
+          "q": "술이 약한 친구가 난처해한다면?",
+          "options": [
+            { "text": "대신 마셔주며 흑기사를 자처한다", "scores": { "MOOD_MAKER": 1 } },
+            { "text": "조용히 콜라나 물을 챙겨다 준다", "scores": { "QUIET_OBSERVER": 1 } }
+          ]
+        },
+        {
+          "q": "갑자기 분위기가 맛 평가단이 된다면?",
+          "options": [
+            { "text": "이 집의 숨겨진 양념 비법을 열거한다", "scores": { "TASTER": 1 } },
+            { "text": "묵묵히 가장 맛있는 부위만 골라 먹는다", "scores": { "QUIET_OBSERVER": 1 } }
+          ]
+        },
+        {
+          "q": "회식을 마무리하며 계산할 때 당신은?",
+          "options": [
+            { "text": "영수증을 챙기고 n분의 1을 계산한다", "scores": { "PLANNER": 1 } },
+            { "text": "오늘 너무 맛있었다며 사장님께 인사한다", "scores": { "TASTER": 1 } }
+          ]
+        }
       ]
     },
     {
-      "id": "mbti_b",
-      "title": "친구랑 노는 스타일 알아보기 (B)",
-      "desc": "친구와의 행동을 중심으로 하는 테스트예요.",
+      "id": "travel_style",
+      "title": "나의 여행 스타일은?",
+      "desc": "낯선 곳으로 떠났을 때 나타나는 나의 본모습은?",
       "questions": [
-        { "q": "친구 모임에서 중심이 되나요?", "options": [ { "text": "네, 중심이 된다", "scores": { "ENFP": 1 } }, { "text": "아니요, 조용히 있는 편이다", "scores": { "INTJ": 1 } }, { "text": "필요할 때만 참여한다", "scores": { "ISFJ": 1 } } ] },
-        { "q": "불편한 상황에서 자신의 감정을 솔직히 표현하나요?", "options": [ { "text": "솔직히 표현한다", "scores": { "ENFP": 1 } }, { "text": "조심스럽게 표현한다", "scores": { "ISFJ": 1 } }, { "text": "논리적으로 정리해서 말한다", "scores": { "INTJ": 1 } } ] },
-        { "q": "사교적 에너지를 회복하려면 어떻게 하나요?", "options": [ { "text": "사람들과 어울린다", "scores": { "ENFP": 1 } }, { "text": "혼자 시간을 가진다", "scores": { "INTJ": 1 } }, { "text": "소수의 친한 사람과 만난다", "scores": { "ISFJ": 1 } } ] },
-        { "q": "새로운 모임에 초대받았을 때 행동은?", "options": [ { "text": "바로 수락한다", "scores": { "ENFP": 1 } }, { "text": "상황을 보고 결정한다", "scores": { "ISFJ": 1 } }, { "text": "미리 계획을 세워 준비한다", "scores": { "INTJ": 1 } } ] },
-        { "q": "갈등 상황에서 주로 어떤 역할을 하나요?", "options": [ { "text": "중재하고 조율한다", "scores": { "ISFJ": 1 } }, { "text": "솔직하게 문제를 지적한다", "scores": { "INTJ": 1 } }, { "text": "감정을 표현하며 풀어간다", "scores": { "ENFP": 1 } } ] },
-        { "q": "새로운 사람과 빨리 친해지는 편인가요?", "options": [ { "text": "네, 바로 친구가 된다", "scores": { "ENFP": 1 } }, { "text": "천천히 친해진다", "scores": { "INTJ": 1 } }, { "text": "한두 명만 같이 놀자고 한다", "scores": { "ISFJ": 1 } } ] },
-        { "q": "친구와 약속 잡을 때 주로 어떻게 해요?", "options": [ { "text": "그때그때 즉흥적으로 정한다", "scores": { "ENFP": 1 } }, { "text": "시간과 장소를 미리 정한다", "scores": { "INTJ": 1 } }, { "text": "친구들과 상의해서 정한다", "scores": { "ISFJ": 1 } } ] },
-        { "q": "친구의 작은 변화를 잘 알아채나요?", "options": [ { "text": "네, 금방 알아챈다", "scores": { "ISFJ": 1 } }, { "text": "가끔 알아챈다", "scores": { "ENFP": 1 } }, { "text": "무슨 변화인지 이유를 생각한다", "scores": { "INTJ": 1 } } ] },
-        { "q": "놀이에서 역할을 맡으면 주로 어떤 걸 하나요?", "options": [ { "text": "모두가 웃게 하는 역할", "scores": { "ENFP": 1 } }, { "text": "계획을 세워 진행하는 역할", "scores": { "INTJ": 1 } }, { "text": "모두가 편하게 놀도록 돕는다", "scores": { "ISFJ": 1 } } ] },
-        { "q": "친구들이 나를 믿는다고 느끼나요?", "options": [ { "text": "네, 친구들이 좋아해준다", "scores": { "ISFJ": 1 } }, { "text": "가끔 그런 편이다", "scores": { "ENFP": 1 } }, { "text": "믿음을 얻으려 노력한다", "scores": { "INTJ": 1 } } ] }
+        {
+          "q": "여행 계획을 세울 때 당신은?",
+          "options": [
+            { "text": "운명에 맡긴다! 발길 닿는 대로", "scores": { "FREE_SOUL": 1 } },
+            { "text": "분 단위로 쪼갠 완벽한 일정표", "scores": { "GUIDE_MASTER": 1 } }
+          ]
+        },
+        {
+          "q": "유명한 맛집 앞에 긴 줄이 있다면?",
+          "options": [
+            { "text": "기다리는 것도 여행! 무조건 줄을 선다", "scores": { "GUIDE_MASTER": 1 } },
+            { "text": "옆 가게도 맛있겠지! 그냥 들어간다", "scores": { "FREE_SOUL": 1 } }
+          ]
+        },
+        {
+          "q": "숙소를 고를 때 가장 중요한 것은?",
+          "options": [
+            { "text": "현지 느낌 물씬 풍기는 이색적인 곳", "scores": { "LOCAL_HUNTER": 1 } },
+            { "text": "교통이 편리하고 깔끔한 정석 호텔", "scores": { "RELAX_SEEKER": 1 } }
+          ]
+        },
+        {
+          "q": "여행지에서 아침 8시, 당신은?",
+          "options": [
+            { "text": "조식 오픈런! 하나라도 더 봐야지", "scores": { "GUIDE_MASTER": 1 } },
+            { "text": "점심쯤 일어나서 느긋하게 커피 한 잔", "scores": { "RELAX_SEEKER": 1 } }
+          ]
+        },
+        {
+          "q": "모르는 골목길에서 길을 잃었다면?",
+          "options": [
+            { "text": "이것도 여행의 묘미! 그냥 걸어본다", "scores": { "FREE_SOUL": 1 } },
+            { "text": "지도의 평점 낮은 관광지로 가본다", "scores": { "LOCAL_HUNTER": 1 } }
+          ]
+        },
+        {
+          "q": "여행 중 사진 찍는 스타일은?",
+          "options": [
+            { "text": "풍경과 소품 위주의 예술적 기록", "scores": { "LOCAL_HUNTER": 1 } },
+            { "text": "내가 잘 나온 인생샷 위주의 기록", "scores": { "RELAX_SEEKER": 1 } }
+          ]
+        },
+        {
+          "q": "예상치 못한 비가 온다면?",
+          "options": [
+            { "text": "실내 플랜 B 가동! 바로 이동한다", "scores": { "GUIDE_MASTER": 1 } },
+            { "text": "숙소에서 빗소리 들으며 낮잠 자기", "scores": { "RELAX_SEEKER": 1 } }
+          ]
+        },
+        {
+          "q": "마지막 날, 기념품을 살 때?",
+          "options": [
+            { "text": "남들 다 사는 유명한 시장 기념품", "scores": { "FREE_SOUL": 1 } },
+            { "text": "나만 아는 골목 빈티지 샵의 보물", "scores": { "LOCAL_HUNTER": 1 } }
+          ]
+        }
       ]
     },
     {
-      "id": "mbti_c",
-      "title": "생각하는 방법 알아보기 (C)",
-      "desc": "문제 해결과 새로운 아이디어에 대한 반응을 보는 테스트예요.",
+      "id": "weekend_life",
+      "title": "주말을 보내는 나의 자세",
+      "desc": "기다리고 기다리던 주말! 당신은 무엇을 하나요?",
       "questions": [
-        { "q": "수학 문제를 못 풀면 먼저 뭐해요?", "options": [ { "text": "다른 방법으로 한번 시도해본다", "scores": { "ENFP": 1 } }, { "text": "공책을 보고 차근차근 푼다", "scores": { "INTJ": 1 } }, { "text": "친구에게 도움을 요청한다", "scores": { "ISFJ": 1 } } ] },
-        { "q": "선생님이 새 활동을 시키면 어떻게 해요?", "options": [ { "text": "와 재밌겠다! 바로 해본다", "scores": { "ENFP": 1 } }, { "text": "먼저 규칙을 잘 확인한다", "scores": { "INTJ": 1 } }, { "text": "친구들과 상의하며 참여한다", "scores": { "ISFJ": 1 } } ] },
-        { "q": "수업 중 궁금한 게 있으면?", "options": [ { "text": "바로 손 들고 질문한다", "scores": { "ENFP": 1 } }, { "text": "집에 가서 혼자 찾아본다", "scores": { "INTJ": 1 } }, { "text": "수업 끝나고 친구랑 이야기한다", "scores": { "ISFJ": 1 } } ] },
-        { "q": "새로운 게임 규칙을 만들 때 주로 뭐해요?", "options": [ { "text": "새롭고 재미있게 바꾼다", "scores": { "ENFP": 1 } }, { "text": "규칙이 공평한지 생각한다", "scores": { "INTJ": 1 } }, { "text": "모두가 이해할 수 있게 정리한다", "scores": { "ISFJ": 1 } } ] },
-        { "q": "친구가 아이디어를 말하면 당신은?", "options": [ { "text": "우와 재미있다, 바로 해보자", "scores": { "ENFP": 1 } }, { "text": "이게 잘 될지 생각해본다", "scores": { "INTJ": 1 } }, { "text": "친구 기분을 먼저 살핀다", "scores": { "ISFJ": 1 } } ] },
-        { "q": "새로운 것을 배우려면 보통 어떻게 하나요?", "options": [ { "text": "바로 시도해보며 배운다", "scores": { "ENFP": 1 } }, { "text": "방법을 정해 천천히 배운다", "scores": { "INTJ": 1 } }, { "text": "친구와 같이 배우는 걸 좋아한다", "scores": { "ISFJ": 1 } } ] },
-        { "q": "숙제할 때 틀린 문제를 만나면?", "options": [ { "text": "다른 방법으로 풀어본다", "scores": { "ENFP": 1 } }, { "text": "잘못한 이유를 찾아서 고친다", "scores": { "INTJ": 1 } }, { "text": "선생님께 물어본다", "scores": { "ISFJ": 1 } } ] },
-        { "q": "실수했을 때 주로 어떻게 하나요?", "options": [ { "text": "괜찮아, 다음엔 재밌게 해보자", "scores": { "ENFP": 1 } }, { "text": "무엇이 잘못됐는지 분석한다", "scores": { "INTJ": 1 } }, { "text": "먼저 사과하고 도와준다", "scores": { "ISFJ": 1 } } ] },
-        { "q": "친구가 한 말이 이상하면?", "options": [ { "text": "바로 반응하고 장난친다", "scores": { "ENFP": 1 } }, { "text": "왜 그런지 이유를 생각해본다", "scores": { "INTJ": 1 } }, { "text": "친구 기분을 살펴본다", "scores": { "ISFJ": 1 } } ] },
-        { "q": "새로운 규칙을 생각해낼 때 무엇을 먼저 보나요?", "options": [ { "text": "재미있고 신나는지", "scores": { "ENFP": 1 } }, { "text": "모두에게 공평한지", "scores": { "INTJ": 1 } }, { "text": "친구들이 불편하지는 않은지", "scores": { "ISFJ": 1 } } ] }
+        {
+          "q": "토요일 아침, 눈을 떴을 때?",
+          "options": [
+            { "text": "여유로운 늦잠! 이불 밖은 위험해", "scores": { "HOMEBODY": 1 } },
+            { "text": "오늘 일정을 떠올리며 벌떡 일어난다", "scores": { "OUTBOUNDER": 1 } }
+          ]
+        },
+        {
+          "q": "친구에게서 '지금 나올래?' 연락이 왔다면?",
+          "options": [
+            { "text": "이미 침대와 한 몸... 다음에 보자", "scores": { "HOMEBODY": 1 } },
+            { "text": "좋아! 어디로 가면 돼?", "scores": { "SOCIAL_BUTTERFLY": 1 } }
+          ]
+        },
+        {
+          "q": "갑자기 새로운 걸 배워보고 싶다면?",
+          "options": [
+            { "text": "원데이 클래스 같은 체험 활동 예약", "scores": { "HOBBY_COLLECTOR": 1 } },
+            { "text": "유튜브로 독학하며 혼자 해보기", "scores": { "HOMEBODY": 1 } }
+          ]
+        },
+        {
+          "q": "주말 저녁, 파티가 열린다면?",
+          "options": [
+            { "text": "모르는 사람들과도 금방 친해진다", "scores": { "SOCIAL_BUTTERFLY": 1 } },
+            { "text": "친한 사람 몇 명과 구석에서 대화한다", "scores": { "HOBBY_COLLECTOR": 1 } }
+          ]
+        },
+        {
+          "q": "SNS에 오늘을 기록한다면?",
+          "options": [
+            { "text": "북적북적 친구들과 만난 사진", "scores": { "SOCIAL_BUTTERFLY": 1 } },
+            { "text": "직접 만든 요리나 완성한 작업물", "scores": { "HOBBY_COLLECTOR": 1 } }
+          ]
+        },
+        {
+          "q": "날씨가 너무 좋을 때 당신의 선택은?",
+          "options": [
+            { "text": "창문을 열고 집에서 햇살 즐기기", "scores": { "HOMEBODY": 1 } },
+            { "text": "밖으로 나가서 한강이나 공원 걷기", "scores": { "OUTBOUNDER": 1 } }
+          ]
+        },
+        {
+          "q": "밀린 집안일을 해야 한다면?",
+          "options": [
+            { "text": "최대한 미루다 주말 끝자락에 한다", "scores": { "OUTBOUNDER": 1 } },
+            { "text": "아침부터 청소하며 환경을 정리한다", "scores": { "HOBBY_COLLECTOR": 1 } }
+          ]
+        },
+        {
+          "q": "다음 주를 준비하는 일요일 밤?",
+          "options": [
+            { "text": "명상이나 독서로 마음을 가라앉힌다", "scores": { "HOMEBODY": 1 } },
+            { "text": "내일 입을 옷을 미리 준비하고 계획한다", "scores": { "OUTBOUNDER": 1 } }
+          ]
+        }
       ]
     },
     {
-      "id": "mbti_d",
-      "title": "실용적인 생활 스타일 (D)",
-      "desc": "일상과 놀이에서의 성향을 보는 테스트예요.",
+      "id": "study_type",
+      "title": "공부할 때 나의 모습",
+      "desc": "집중의 순간, 나는 어떤 타입일까?",
       "questions": [
-        { "q": "아침에 일어나면 어떻게 준비해요?", "options": [ { "text": "일어나자마자 신나게 준비한다", "scores": { "ENFP": 1 } }, { "text": "정해진 순서대로 차근차근 준비한다", "scores": { "ISFJ": 1 } }, { "text": "빠르게 준비해서 시간을 절약한다", "scores": { "INTJ": 1 } } ] },
-        { "q": "숙제할 때 무엇을 먼저 하나요?", "options": [ { "text": "재미있는 것부터 한다", "scores": { "ENFP": 1 } }, { "text": "어려운 것부터 차근히 한다", "scores": { "INTJ": 1 } }, { "text": "먼저 필요한 도구를 준비한다", "scores": { "ISFJ": 1 } } ] },
-        { "q": "운동장에서 놀 때 안전은 어떻게 생각하나요?", "options": [ { "text": "조금 위험해도 재밌으면 해본다", "scores": { "ENFP": 1 } }, { "text": "안전하게 하는 게 먼저다", "scores": { "ISFJ": 1 } }, { "text": "효율적으로 공간을 나눠 쓴다", "scores": { "INTJ": 1 } } ] },
-        { "q": "친구와 역할을 나눌 때 주로 뭐해요?", "options": [ { "text": "모두가 즐겁게 하게끔 한다", "scores": { "ENFP": 1 } }, { "text": "세부 일을 책임지고 한다", "scores": { "ISFJ": 1 } }, { "text": "어떻게 하면 제일 빨리 끝낼지 생각한다", "scores": { "INTJ": 1 } } ] },
-        { "q": "새 물건을 사려면 어떻게 결정하나요?", "options": [ { "text": "바로 사고 싶다", "scores": { "ENFP": 1 } }, { "text": "필요한지 먼저 생각한다", "scores": { "ISFJ": 1 } }, { "text": "가성비를 따져 결정한다", "scores": { "INTJ": 1 } } ] },
-        { "q": "친구가 약속을 어기면?", "options": [ { "text": "다음엔 같이 즐겁게 놀자고 한다", "scores": { "ENFP": 1 } }, { "text": "이유를 물어보고 이해하려 한다", "scores": { "ISFJ": 1 } }, { "text": "다음엔 꼭 지키게 계획을 세운다", "scores": { "INTJ": 1 } } ] },
-        { "q": "새로운 규칙이 있으면 어떻게 해요?", "options": [ { "text": "한번 해보고 판단한다", "scores": { "ENFP": 1 } }, { "text": "먼저 규칙을 잘 지킨다", "scores": { "ISFJ": 1 } }, { "text": "왜 필요한지 분석해본다", "scores": { "INTJ": 1 } } ] },
-        { "q": "집안일을 도우라고 하면?", "options": [ { "text": "재밌게 같이 한다", "scores": { "ENFP": 1 } }, { "text": "정해진 순서로 착실히 한다", "scores": { "ISFJ": 1 } }, { "text": "효율적으로 나눠서 한다", "scores": { "INTJ": 1 } } ] },
-        { "q": "친구와 계획을 세울 때 주로 어떤 역할을 해요?", "options": [ { "text": "분위기를 띄우고 아이디어 낸다", "scores": { "ENFP": 1 } }, { "text": "모든 것을 정리하고 책임진다", "scores": { "ISFJ": 1 } }, { "text": "계획이 쓰일 최적의 방법을 찾는다", "scores": { "INTJ": 1 } } ] },
-        { "q": "가장 좋아하는 쉬는 시간 활동은?", "options": [ { "text": "친구들과 뛰어논다", "scores": { "ENFP": 1 } }, { "text": "조용히 책 읽기", "scores": { "INTJ": 1 } }, { "text": "친구 도와주기", "scores": { "ISFJ": 1 } } ] }
+        {
+          "q": "시험 기간, 공부를 시작하는 시점은?",
+          "options": [
+            { "text": "시험 공지 뜬 날부터 매일 조금씩", "scores": { "CONSISTENT_RUNNER": 1 } },
+            { "text": "시험 전날 밤, 벼락치기의 스릴", "scores": { "LAST_MINUTER": 1 } }
+          ]
+        },
+        {
+          "q": "공부할 때 가장 효과적인 방법은?",
+          "options": [
+            { "text": "혼자 정독하며 요약 정리하기", "scores": { "FOCUS_KING": 1 } },
+            { "text": "친구에게 가르쳐주며 이해하기", "scores": { "BRAINSTORMER": 1 } }
+          ]
+        },
+        {
+          "q": "새로운 문제집을 샀을 때?",
+          "options": [
+            { "text": "1페이지부터 차례대로 풀어나간다", "scores": { "CONSISTENT_RUNNER": 1 } },
+            { "text": "가장 재미있어 보이는 단원부터 푼다", "scores": { "BRAINSTORMER": 1 } }
+          ]
+        },
+        {
+          "q": "공부 장소를 정할 때?",
+          "options": [
+            { "text": "소음 하나 없는 정적인 공간", "scores": { "FOCUS_KING": 1 } },
+            { "text": "사람들 소리가 들리는 활기찬 카페", "scores": { "BRAINSTORMER": 1 } }
+          ]
+        },
+        {
+          "q": "공부 중 스마트폰 유혹이 온다면?",
+          "options": [
+            { "text": "잠금 앱을 쓰거나 멀리 둔다", "scores": { "FOCUS_KING": 1 } },
+            { "text": "중간중간 답장하며 멀티태스킹한다", "scores": { "LAST_MINUTER": 1 } }
+          ]
+        },
+        {
+          "q": "리포트 제출 마감 1시간 전?",
+          "options": [
+            { "text": "이미 제출 완료하고 검토 중", "scores": { "CONSISTENT_RUNNER": 1 } },
+            { "text": "지금이 최고의 집중력! 타이핑 가속", "scores": { "LAST_MINUTER": 1 } }
+          ]
+        },
+        {
+          "q": "문제를 풀다 몰르는 게 나오면?",
+          "options": [
+            { "text": "답지를 안 보고 30분 이상 고민한다", "scores": { "FOCUS_KING": 1 } },
+            { "text": "인터넷이나 질문방에 바로 물어본다", "scores": { "LAST_MINUTER": 1 } }
+          ]
+        },
+        {
+          "q": "계획표를 짤 때 나의 스타일?",
+          "options": [
+            { "text": "성취감을 위한 체크리스트 식", "scores": { "CONSISTENT_RUNNER": 1 } },
+            { "text": "그날의 기분에 따른 자유로운 배정", "scores": { "BRAINSTORMER": 1 } }
+          ]
+        }
       ]
     }
   ]

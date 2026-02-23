@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', async function () {
   // Detect testId from URL parameter or filename
   const urlParams = new URLSearchParams(window.location.search);
   let testId = urlParams.get('testId');
@@ -35,6 +35,9 @@ document.addEventListener('DOMContentLoaded', function () {
     CONSISTENT_RUNNER: { title: '꾸준한 거북이 🐿️', text: '기복 없는 성실함이 최고의 무기! 매일의 작은 노력이 큰 성과를 만드는 타입입니다.' }
   };
   let resultImages = {};
+  let tests = [];
+  let currentTest = null;
+  let questions = [];
 
   let state = { index: 0, answers: [], scores: {} };
 
@@ -177,8 +180,10 @@ document.addEventListener('DOMContentLoaded', function () {
   el.viewResultBtn.addEventListener('click', showResult);
   el.restartBtn.addEventListener('click', () => window.location.reload());
 
-  // Use global variable from tests.js instead of fetch
-  if (typeof TESTS_DATA !== 'undefined') {
+  try {
+    const response = await fetch('../data/tests.json');
+    const TESTS_DATA = await response.json();
+    
     tests = TESTS_DATA.tests || [];
     resultImages = TESTS_DATA.resultImages || {};
     currentTest = tests.find(t => t.id === testId) || tests[0];
@@ -191,7 +196,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     
     renderQuestion(state.index);
-  } else {
-    console.error('TESTS_DATA is not defined. Make sure tests.js is loaded.');
+  } catch (error) {
+    console.error('Failed to load tests.json:', error);
   }
 });
