@@ -1,0 +1,61 @@
+{
+  "id": "travel_style",
+  "questions": [
+    {
+      "q": "여행 계획을 세울 때 당신은?",
+      "options": [
+        { "text": "운명에 맡긴다! 발길 닿는 대로", "scores": { "FREE_SOUL": 1 } },
+        { "text": "분 단위로 쪼갠 완벽한 일정표", "scores": { "GUIDE_MASTER": 1 } }
+      ]
+    },
+    {
+      "q": "유명한 맛집 앞에 긴 줄이 있다면?",
+      "options": [
+        { "text": "기다리는 것도 여행! 무조건 줄을 선다", "scores": { "GUIDE_MASTER": 1 } },
+        { "text": "옆 가게도 맛있겠지! 그냥 들어간다", "scores": { "FREE_SOUL": 1 } }
+      ]
+    },
+    {
+      "q": "숙소를 고를 때 가장 중요한 것은?",
+      "options": [
+        { "text": "현지 느낌 물씬 풍기는 이색적인 곳", "scores": { "LOCAL_HUNTER": 1 } },
+        { "text": "교통이 편리하고 깔끔한 정석 호텔", "scores": { "RELAX_SEEKER": 1 } }
+      ]
+    },
+    {
+      "q": "여행지에서 아침 8시, 당신은?",
+      "options": [
+        { "text": "조식 오픈런! 하나라도 더 봐야지", "scores": { "GUIDE_MASTER": 1 } },
+        { "text": "점심쯤 일어나서 느긋하게 커피 한 잔", "scores": { "RELAX_SEEKER": 1 } }
+      ]
+    },
+    {
+      "q": "모르는 골목길에서 길을 잃었다면?",
+      "options": [
+        { "text": "이것도 여행의 묘미! 그냥 걸어본다", "scores": { "FREE_SOUL": 1 } },
+        { "text": "지도의 평점 낮은 관광지로 가본다", "scores": { "LOCAL_HUNTER": 1 } }
+      ]
+    },
+    {
+      "q": "여행 중 사진 찍는 스타일은?",
+      "options": [
+        { "text": "풍경과 소품 위주의 예술적 기록", "scores": { "LOCAL_HUNTER": 1 } },
+        { "text": "내가 잘 나온 인생샷 위주의 기록", "scores": { "RELAX_SEEKER": 1 } }
+      ]
+    },
+    {
+      "q": "예상치 못한 비가 온다면?",
+      "options": [
+        { "text": "실내 플랜 B 가동! 바로 이동한다", "scores": { "GUIDE_MASTER": 1 } },
+        { "text": "숙소에서 빗소리 들으며 낮잠 자기", "scores": { "RELAX_SEEKER": 1 } }
+      ]
+    },
+    {
+      "q": "마지막 날, 기념품을 살 때?",
+      "options": [
+        { "text": "남들 다 사는 유명한 시장 기념품", "scores": { "FREE_SOUL": 1 } },
+        { "text": "나만 아는 골목 빈티지 샵의 보물", "scores": { "LOCAL_HUNTER": 1 } }
+      ]
+    }
+  ]
+}

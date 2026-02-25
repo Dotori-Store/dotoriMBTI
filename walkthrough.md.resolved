@@ -1,0 +1,41 @@
+# 결과 보고서 - 테스트 데이터 관리 구조 개선
+
+테스트 데이터의 확장성과 유지보수 편의성을 위해, 하나로 뭉쳐있던 데이터를 논리적 단위로 분리하고 동적으로 로드하는 구조로 개선을 완료하였습니다. 또한 요청하신 대로 UI 클래스 명칭 변경을 완료했습니다.
+
+## 주요 변경 사항
+
+### 1. 데이터 분리 및 재구조화
+- **목록용 메타데이터**: [data/tests_meta.json](file:///c:/Users/com/Desktop/Publish/mbti/data/tests_meta.json) 생성. 메인 페이지 로딩 시 필요한 최소한의 정보만 담고 있어 속도가 개선되었습니다.
+- **개별 질문 데이터**: `data/tests/` 폴더 내에 각 테스트 ID별 JSON 파일 생성. 각 테스트 페이지는 자신에게 필요한 데이터만 로드합니다.
+- **공통 설정 데이터**: `data/result_config.json` 생성. 결과 이미지 URL과 성격 유형별 설명을 통합 관리하여 `quiz.js`의 하드코딩을 제거했습니다.
+
+### 2. 스크립트 및 UI 개선
+- **클래스명 변경**: `test-` 접두사를 `quiz-`로 변경 (`quiz-card`, `quiz-title`, `quiz-desc`).
+- **동적 데이터 로딩**: `main.js`와 `quiz.js`가 새로운 파일 구조를 인식하고 데이터를 가져오도록 로직을 수정했습니다.
+
+## 파일 구조 비교
+
+| 구분 | 변경 전 | 변경 후 (개선) |
+| :--- | :--- | :--- |
+| 데이터 파일 | `tests.json` (하나에 모두 포함) | `tests_meta.json`, `result_config.json`, 개별 테스트 파일들 |
+| 로딩 방식 | 모든 테스트 정보 일시 로드 | 필요할 때 필요한 데이터만 로드 (Lazy Loading) |
+| 코드 관리 | `quiz.js` 내 결과 설명 하드코딩 | `result_config.json`에서 데이터로 관리 |
+
+## 검증 결과
+
+> [!IMPORTANT]
+> **로컬 실행 시 주의사항**
+> 최신 브라우저는 보안 정책(CORS)으로 인해 local file(`file://`)에서 다른 로컬 JSON 파일을 호출하는 것을 차단합니다. 따라서 본 개선 사항을 확인하려면 **Live Server**나 **python -m http.server** 같은 로컬 개발 서버를 통해 실행해야 합니다.
+
+![애플리케이션 구조도](mermaid
+graph TD
+    A[index.html] --> B[tests_meta.json 로드]
+    A --> C[테스트 목록 렌더링]
+    C --> D[개별 테스트 페이지]
+    D --> E[result_config.json 로드]
+    D --> F[개별 질문 JSON 로드]
+    F --> G[퀴즈 엔진 작동]
+)
+
+## 삭제된 파일
+- `data/tests.json` (불필요해짐에 따라 삭제 완료)

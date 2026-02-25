@@ -101,7 +101,7 @@ footer {
   align-items: stretch;
 }
 
-.test-card {
+.quiz-card {
   display: block;
   text-align: left;
   border: none;
@@ -111,12 +111,12 @@ footer {
   font-size: 1rem;
 }
 
-.test-title {
+.quiz-title {
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
-.test-desc {
+.quiz-desc {
   color: #666;
   font-size: 0.95rem;
   margin-top: auto;

@@ -1,0 +1,61 @@
+{
+  "id": "office_party",
+  "questions": [
+    {
+      "q": "회식 장소에 도착했을 때, 당신의 자리는?",
+      "options": [
+        { "text": "사람들이 많은 중앙 자리", "scores": { "MOOD_MAKER": 1 } },
+        { "text": "조용히 나갈 수 있는 구석 자리", "scores": { "QUIET_OBSERVER": 1 } }
+      ]
+    },
+    {
+      "q": "메뉴를 정할 때, 당신은?",
+      "options": [
+        { "text": "가장 인기 있는 추천 메뉴!", "scores": { "MOOD_MAKER": 1 } },
+        { "text": "미리 리뷰를 찾아보고 가성비 좋은 메뉴", "scores": { "PLANNER": 1 } }
+      ]
+    },
+    {
+      "q": "주문한 음식이 나왔을 때!",
+      "options": [
+        { "text": "먹기 전 사진부터! 인스타 감성 샷", "scores": { "TASTER": 1 } },
+        { "text": "식기 전에 빨리 나눠주는 효율성", "scores": { "PLANNER": 1 } }
+      ]
+    },
+    {
+      "q": "회식 분위기가 무르익었을 때?",
+      "options": [
+        { "text": "건배사를 주도하고 분위기를 띄운다", "scores": { "MOOD_MAKER": 1 } },
+        { "text": "조용히 고기를 굽거나 빈 잔을 채운다", "scores": { "PLANNER": 1 } }
+      ]
+    },
+    {
+      "q": "옆 사람이 어색해 보일 때?",
+      "options": [
+        { "text": "먼저 말을 걸어 분위기를 푼다", "scores": { "MOOD_MAKER": 1 } },
+        { "text": "그저 묵묵히 들어주며 웃어준다", "scores": { "QUIET_OBSERVER": 1 } }
+      ]
+    },
+    {
+      "q": "술이 약한 친구가 난처해한다면?",
+      "options": [
+        { "text": "대신 마셔주며 흑기사를 자처한다", "scores": { "MOOD_MAKER": 1 } },
+        { "text": "조용히 콜라나 물을 챙겨다 준다", "scores": { "QUIET_OBSERVER": 1 } }
+      ]
+    },
+    {
+      "q": "갑자기 분위기가 맛 평가단이 된다면?",
+      "options": [
+        { "text": "이 집의 숨겨진 양념 비법을 열거한다", "scores": { "TASTER": 1 } },
+        { "text": "묵묵히 가장 맛있는 부위만 골라 먹는다", "scores": { "QUIET_OBSERVER": 1 } }
+      ]
+    },
+    {
+      "q": "회식을 마무리하며 계산할 때 당신은?",
+      "options": [
+        { "text": "영수증을 챙기고 n분의 1을 계산한다", "scores": { "PLANNER": 1 } },
+        { "text": "오늘 너무 맛있었다며 사장님께 인사한다", "scores": { "TASTER": 1 } }
+      ]
+    }
+  ]
+}

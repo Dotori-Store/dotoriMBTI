@@ -1,0 +1,61 @@
+{
+  "id": "study_type",
+  "questions": [
+    {
+      "q": "시험 기간, 공부를 시작하는 시점은?",
+      "options": [
+        { "text": "시험 공지 뜬 날부터 매일 조금씩", "scores": { "CONSISTENT_RUNNER": 1 } },
+        { "text": "시험 전날 밤, 벼락치기의 스릴", "scores": { "LAST_MINUTER": 1 } }
+      ]
+    },
+    {
+      "q": "공부할 때 가장 효과적인 방법은?",
+      "options": [
+        { "text": "혼자 정독하며 요약 정리하기", "scores": { "FOCUS_KING": 1 } },
+        { "text": "친구에게 가르쳐주며 이해하기", "scores": { "BRAINSTORMER": 1 } }
+      ]
+    },
+    {
+      "q": "새로운 문제집을 샀을 때?",
+      "options": [
+        { "text": "1페이지부터 차례대로 풀어나간다", "scores": { "CONSISTENT_RUNNER": 1 } },
+        { "text": "가장 재미있어 보이는 단원부터 푼다", "scores": { "BRAINSTORMER": 1 } }
+      ]
+    },
+    {
+      "q": "공부 장소를 정할 때?",
+      "options": [
+        { "text": "소음 하나 없는 정적인 공간", "scores": { "FOCUS_KING": 1 } },
+        { "text": "사람들 소리가 들리는 활기찬 카페", "scores": { "BRAINSTORMER": 1 } }
+      ]
+    },
+    {
+      "q": "공부 중 스마트폰 유혹이 온다면?",
+      "options": [
+        { "text": "잠금 앱을 쓰거나 멀리 둔다", "scores": { "FOCUS_KING": 1 } },
+        { "text": "중간중간 답장하며 멀티태스킹한다", "scores": { "LAST_MINUTER": 1 } }
+      ]
+    },
+    {
+      "q": "리포트 제출 마감 1시간 전?",
+      "options": [
+        { "text": "이미 제출 완료하고 검토 중", "scores": { "CONSISTENT_RUNNER": 1 } },
+        { "text": "지금이 최고의 집중력! 타이핑 가속", "scores": { "LAST_MINUTER": 1 } }
+      ]
+    },
+    {
+      "q": "문제를 풀다 몰르는 게 나오면?",
+      "options": [
+        { "text": "답지를 안 보고 30분 이상 고민한다", "scores": { "FOCUS_KING": 1 } },
+        { "text": "인터넷이나 질문방에 바로 물어본다", "scores": { "LAST_MINUTER": 1 } }
+      ]
+    },
+    {
+      "q": "계획표를 짤 때 나의 스타일?",
+      "options": [
+        { "text": "성취감을 위한 체크리스트 식", "scores": { "CONSISTENT_RUNNER": 1 } },
+        { "text": "그날의 기분에 따른 자유로운 배정", "scores": { "BRAINSTORMER": 1 } }
+      ]
+    }
+  ]
+}

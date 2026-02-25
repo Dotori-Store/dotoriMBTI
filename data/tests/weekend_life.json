@@ -1,0 +1,61 @@
+{
+  "id": "weekend_life",
+  "questions": [
+    {
+      "q": "토요일 아침, 눈을 떴을 때?",
+      "options": [
+        { "text": "여유로운 늦잠! 이불 밖은 위험해", "scores": { "HOMEBODY": 1 } },
+        { "text": "오늘 일정을 떠올리며 벌떡 일어난다", "scores": { "OUTBOUNDER": 1 } }
+      ]
+    },
+    {
+      "q": "친구에게서 '지금 나올래?' 연락이 왔다면?",
+      "options": [
+        { "text": "이미 침대와 한 몸... 다음에 보자", "scores": { "HOMEBODY": 1 } },
+        { "text": "좋아! 어디로 가면 돼?", "scores": { "SOCIAL_BUTTERFLY": 1 } }
+      ]
+    },
+    {
+      "q": "갑자기 새로운 걸 배워보고 싶다면?",
+      "options": [
+        { "text": "원데이 클래스 같은 체험 활동 예약", "scores": { "HOBBY_COLLECTOR": 1 } },
+        { "text": "유튜브로 독학하며 혼자 해보기", "scores": { "HOMEBODY": 1 } }
+      ]
+    },
+    {
+      "q": "주말 저녁, 파티가 열린다면?",
+      "options": [
+        { "text": "모르는 사람들과도 금방 친해진다", "scores": { "SOCIAL_BUTTERFLY": 1 } },
+        { "text": "친한 사람 몇 명과 구석에서 대화한다", "scores": { "HOBBY_COLLECTOR": 1 } }
+      ]
+    },
+    {
+      "q": "SNS에 오늘을 기록한다면?",
+      "options": [
+        { "text": "북적북적 친구들과 만난 사진", "scores": { "SOCIAL_BUTTERFLY": 1 } },
+        { "text": "직접 만든 요리나 완성한 작업물", "scores": { "HOBBY_COLLECTOR": 1 } }
+      ]
+    },
+    {
+      "q": "날씨가 너무 좋을 때 당신의 선택은?",
+      "options": [
+        { "text": "창문을 열고 집에서 햇살 즐기기", "scores": { "HOMEBODY": 1 } },
+        { "text": "밖으로 나가서 한강이나 공원 걷기", "scores": { "OUTBOUNDER": 1 } }
+      ]
+    },
+    {
+      "q": "밀린 집안일을 해야 한다면?",
+      "options": [
+        { "text": "최대한 미루다 주말 끝자락에 한다", "scores": { "OUTBOUNDER": 1 } },
+        { "text": "아침부터 청소하며 환경을 정리한다", "scores": { "HOBBY_COLLECTOR": 1 } }
+      ]
+    },
+    {
+      "q": "다음 주를 준비하는 일요일 밤?",
+      "options": [
+        { "text": "명상이나 독서로 마음을 가라앉힌다", "scores": { "HOMEBODY": 1 } },
+        { "text": "내일 입을 옷을 미리 준비하고 계획한다", "scores": { "OUTBOUNDER": 1 } }
+      ]
+    }
+  ]
+}
