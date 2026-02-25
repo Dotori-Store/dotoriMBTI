@@ -15,7 +15,10 @@
     "FOCUS_KING": "https://picsum.photos/seed/study1/300/200",
     "BRAINSTORMER": "https://picsum.photos/seed/study2/300/200",
     "LAST_MINUTER": "https://picsum.photos/seed/study3/300/200",
-    "CONSISTENT_RUNNER": "https://picsum.photos/seed/study4/300/200"
+    "CONSISTENT_RUNNER": "https://picsum.photos/seed/study4/300/200",
+    "DET_LOW": "https://picsum.photos/seed/detective1/300/200",
+    "DET_MID": "https://picsum.photos/seed/detective2/300/200",
+    "DET_HIGH": "https://picsum.photos/seed/detective3/300/200"
   },
   "resultDescriptions": {
     "MOOD_MAKER": { "title": "분위기 메이커! 🐿️", "text": "어디서나 존재감이 확실한 당신! 당신이 없으면 회식 자리가 심심해요." },
@@ -33,6 +36,9 @@
     "FOCUS_KING": { "title": "집중력 대왕 🐿️", "text": "한 번 시작하면 끝을 보는 집중력! 계획대로 착실하게 성과를 내는 타입이에요." },
     "BRAINSTORMER": { "title": "아이디어 뱅크 🐿️", "text": "창의적인 생각과 유연한 사고! 협력하며 정답을 찾아가는 소통의 왕이에요." },
     "LAST_MINUTER": { "title": "벼락치기 천재 🐿️", "text": "막판 스퍼트의 힘! 압박 속에서 최고의 효율을 발휘하는 능력자입니다." },
-    "CONSISTENT_RUNNER": { "title": "꾸준한 거북이 🐿️", "text": "기복 없는 성실함이 최고의 무기! 매일의 작은 노력이 큰 성과를 만드는 타입입니다." }
+    "CONSISTENT_RUNNER": { "title": "꾸준한 거북이 🐿️", "text": "기복 없는 성실함이 최고의 무기! 매일의 작은 노력이 큰 성과를 만드는 타입입니다." },
+    "DET_LOW": { "title": "초보 탐정 🔍", "text": "아직은 직관에 의존하는 편이군요! 하지만 호기심 가득한 당신은 훌륭한 탐정 꿈나무입니다." },
+    "DET_MID": { "title": "베테랑 형사 🚔", "text": "단서들 사이의 연결고리를 찾을 줄 아는군요! 끈기 있는 조사로 진실에 다가가는 실력파입니다." },
+    "DET_HIGH": { "title": "전설의 명탐정 🕵️‍♂️", "text": "사태의 핵심을 꿰뚫어 보는 천재적인 통찰력! 당신 앞에서는 그 어떤 범인도 도망칠 수 없습니다." }
   }
 }
