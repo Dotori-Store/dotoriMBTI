@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', async function () {
   const urlParameters = new URLSearchParams(window.location.search);
   let currentTestId = urlParameters.get('testId');
   if (!currentTestId) {
-    // 예: /tests/mbti_a.html 에서 'mbti_a'만 추출합니다.
     const pathParts = window.location.pathname.split('/');
     const fileName = pathParts[pathParts.length - 1];
     currentTestId = fileName.replace('.html', '');
@@ -67,6 +66,13 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     // 진행률 표시
     uiElements.progress.textContent = `문항 ${index + 1} / ${testQuestions.length}`;
+    
+    // 서사(Background Narrative) 처리: 첫 번째 문항에서만 보여줍니다.
+    const narrativeEl = document.getElementById('narrative');
+    if (narrativeEl) {
+      narrativeEl.style.display = (index === 0) ? 'block' : 'none';
+    }
+
     uiElements.question.textContent = currentQuestion.q;
     uiElements.optionsList.innerHTML = '';
 
@@ -196,7 +202,9 @@ document.addEventListener('DOMContentLoaded', async function () {
   }
 
   uiElements.viewResultBtn.addEventListener('click', calculateAndShowResult);
-  uiElements.restartBtn.addEventListener('click', () => window.location.reload());
+  uiElements.restartBtn.addEventListener('click', () => {
+    window.location.href = window.location.pathname;
+  });
 
   // 데이터를 불러와서 퀴즈를 시작합니다.
   try {
@@ -209,6 +217,18 @@ document.addEventListener('DOMContentLoaded', async function () {
     // 2. 현재 테스트 문항 데이터 로드
     const testResponse = await fetch(`../data/tests/${currentTestId}.json`);
     currentTestObject = await testResponse.json();
+
+    // 상단에 테스트 제목 표시
+    let titleEl = document.getElementById('quiz-title-display');
+    if (!titleEl) {
+      titleEl = document.createElement('h2');
+      titleEl.id = 'quiz-title-display';
+      titleEl.className = 'quiz-main-title';
+      uiElements.quizSection.insertBefore(titleEl, uiElements.quizSection.firstChild);
+    }
+    
+    // 개별 데이터 파일에 있는 title을 가져와 표시합니다.
+    titleEl.textContent = currentTestObject.title || "테스트";
     
     testQuestions = currentTestObject.questions || [];
     gameState.userAnswers = Array(testQuestions.length).fill(null);
