@@ -18,7 +18,10 @@
     "CONSISTENT_RUNNER": "https://picsum.photos/seed/study4/300/200",
     "DET_LOW": "https://picsum.photos/seed/detective1/300/200",
     "DET_MID": "https://picsum.photos/seed/detective2/300/200",
-    "DET_HIGH": "https://picsum.photos/seed/detective3/300/200"
+    "DET_HIGH": "https://picsum.photos/seed/detective3/300/200",
+    "DET_WALLET_LOW": "https://picsum.photos/seed/wallet1/300/200",
+    "DET_WALLET_MID": "https://picsum.photos/seed/wallet2/300/200",
+    "DET_WALLET_HIGH": "https://picsum.photos/seed/wallet3/300/200"
   },
   "resultDescriptions": {
     "MOOD_MAKER": { "title": "분위기 메이커! 🐿️", "text": "어디서나 존재감이 확실한 당신! 당신이 없으면 회식 자리가 심심해요." },
@@ -39,6 +42,9 @@
     "CONSISTENT_RUNNER": { "title": "꾸준한 거북이 🐿️", "text": "기복 없는 성실함이 최고의 무기! 매일의 작은 노력이 큰 성과를 만드는 타입입니다." },
     "DET_LOW": { "title": "초보 탐정 🔍", "text": "아직은 직관에 의존하는 편이군요! 하지만 호기심 가득한 당신은 훌륭한 탐정 꿈나무입니다." },
     "DET_MID": { "title": "베테랑 형사 🚔", "text": "단서들 사이의 연결고리를 찾을 줄 아는군요! 끈기 있는 조사로 진실에 다가가는 실력파입니다." },
-    "DET_HIGH": { "title": "전설의 명탐정 🕵️‍♂️", "text": "사태의 핵심을 꿰뚫어 보는 천재적인 통찰력! 당신 앞에서는 그 어떤 범인도 도망칠 수 없습니다." }
+    "DET_HIGH": { "title": "전설의 명탐정 🕵️‍♂️", "text": "사태의 핵심을 꿰뚫어 보는 천재적인 통찰력! 당신 앞에서는 그 어떤 범인도 도망칠 수 없습니다." },
+    "DET_WALLET_LOW": { "title": "카페의 길 잃은 어린양 ☕", "text": "지갑의 행방보다 카페의 인테리어에 더 관심이 많으시군요! 하지만 괜찮아요, 다음번엔 꼭 찾을 수 있을 거예요." },
+    "DET_WALLET_MID": { "title": "날카로운 눈썰미의 손님 👀", "text": "의자의 위치나 동전 하나도 놓치지 않는 예리함! 범인이 당신의 눈을 피하긴 쉽지 않았을 거예요." },
+    "DET_WALLET_HIGH": { "title": "심리학을 꿰뚫는 천재 탐정 🧠", "text": "도난이 아닌 '상황' 자체를 의심하는 놀라운 통찰력! 당신은 이미 지갑이 어디 있는지 알고 있었군요." }
   }
 }

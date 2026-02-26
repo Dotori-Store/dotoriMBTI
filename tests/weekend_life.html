@@ -8,50 +8,63 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-  <header>
-    <h1><i>🐿️</i> 도토리 가내수공업 <i>🐿️</i></h1>
-    <div id="headerControls"></div>
-  </header>
+  <div class="site-main">
+    <header>
+      <h1><i>🐿️</i> 도토리 가내수공업 <i>🐿️</i></h1>
+      <div id="headerControls"></div>
+    </header>
 
-  <main>
-    <!-- 퀴즈 화면 -->
-    <section id="quiz">
-      <div style="display:flex; align-items:center; gap:1rem;">
-        <div id="progress">문항 로딩 중...</div>
-      </div>
-      <h2 id="question"></h2>
-      <ul id="options"></ul>
-      <div class="bottom-home"><a href="../index.html" class="home-btn">🏠</a></div>
-    </section>
+    <main>
+      <!-- 인트로 화면 -->
+      <section id="intro" hidden>
+        <h2 id="introTitle" class="intro-title"></h2>
+        <div class="intro-content">
+          <!-- 여기에 테스트 설명을 직접 입력하세요 -->
+          <p>기다리고 기다리던 주말! 당신은 무엇을 하며 시간을 보내나요?</p>
+        </div>
+        <button id="startBtn" class="start-btn">시작하기</button>
+        <div class="bottom-home"><a href="../index.html" class="home-btn">🏠</a></div>
+      </section>
 
-    <!-- 완료(결과보기) 화면 -->
-    <section id="complete" hidden>
-      <div style="display:flex; align-items:center; gap:1rem;">
-        <div>테스트 완료! 당신의 캐릭터를 확인해볼까요?</div>
-        <button id="viewResultBtn">결과 보기</button>
-        <a href="../index.html" class="home-btn">처음으로</a>
-      </div>
-    </section>
+      <!-- 퀴즈 화면 -->
+      <section id="quiz">
+        <div style="display:flex; align-items:center; gap:1rem;">
+          <div id="progress">문항 로딩 중...</div>
+        </div>
+        <h2 id="question"></h2>
+        <ul id="options"></ul>
+        <div class="bottom-home"><a href="../index.html" class="home-btn">🏠</a></div>
+      </section>
 
-    <!-- 결과 화면 -->
-    <section id="result" hidden>
-      <div style="display:flex; align-items:center; gap:1rem;">
-        <h2 id="resultTitle"></h2>
-        <a href="../index.html" class="home-btn">처음으로</a>
-      </div>
-      <p id="resultText"></p>
-      <div style="text-align:center;">
-        <img id="resultImage" src="" alt="결과 이미지" style="max-width:300px; display:none; margin-top:1rem; border-radius:12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
-      </div>
-        <div style="margin-top:2rem;">
-        <button id="restartBtn">다시 해보기</button>
-      </div>
-    </section>
-  </main>
+      <!-- 완료(결과보기) 화면 -->
+      <section id="complete" hidden>
+        <div style="display:flex; align-items:center; gap:1rem;">
+          <div>테스트 완료! 당신의 캐릭터를 확인해볼까요?</div>
+          <button id="viewResultBtn">결과 보기</button>
+          <a href="../index.html" class="home-btn">처음으로</a>
+        </div>
+      </section>
 
-  <footer>
-    © 도토리 가내수공업
-  </footer>
+      <!-- 결과 화면 -->
+      <section id="result" hidden>
+        <div style="display:flex; align-items:center; gap:1rem;">
+          <h2 id="resultTitle"></h2>
+          <a href="../index.html" class="home-btn">처음으로</a>
+        </div>
+        <p id="resultText"></p>
+        <div style="text-align:center;">
+          <img id="resultImage" src="" alt="결과 이미지" style="max-width:300px; display:none; margin-top:1rem; border-radius:12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
+        </div>
+          <div style="margin-top:2rem;">
+          <button id="restartBtn">다시 해보기</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © 도토리 가내수공업
+    </footer>
+  </div>
 
   <script src="../scripts/quiz.js"></script>
 </body>

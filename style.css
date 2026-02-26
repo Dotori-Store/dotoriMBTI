@@ -24,6 +24,16 @@ body {
   min-height: 100vh;
 }
 
+.site-main {
+  max-width: 640px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 40px rgba(0,0,0,0.05);
+}
+
 img { max-width: 100%; vertical-align: top; }
 
 header {
@@ -198,4 +208,60 @@ button {
   border-radius: 16px; 
   font-size: 20px;
   font-weight: 600;
+}
+
+/* 인트로 화면 */
+#intro {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  margin: 20px 0;
+}
+
+.intro-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #333;
+  margin-bottom: 1.5rem;
+  word-break: keep-all;
+}
+
+.intro-content {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  word-break: keep-all;
+  text-align: left;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-content p {
+  margin-bottom: 1rem;
+}
+
+.start-btn {
+  background: #8b572a;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 1rem 3rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  box-shadow: 0 4px 15px rgba(139, 87, 42, 0.3);
+}
+
+.start-btn:hover {
+  background: #7a4d25;
+  transform: translateY(-2px);
+}
+
+.start-btn:active {
+  transform: translateY(0);
 }

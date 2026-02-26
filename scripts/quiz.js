@@ -22,6 +22,9 @@ document.addEventListener('DOMContentLoaded', async function () {
 
   // 화면의 주요 요소들을 미리 변수에 담아둡니다.
   const uiElements = {
+    introSection: document.getElementById('intro'),
+    introTitle: document.getElementById('introTitle'),
+    startBtn: document.getElementById('startBtn'),
     progress: document.getElementById('progress'),
     question: document.getElementById('question'),
     optionsList: document.getElementById('options'),
@@ -66,12 +69,6 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     // 진행률 표시
     uiElements.progress.textContent = `문항 ${index + 1} / ${testQuestions.length}`;
-    
-    // 서사(Background Narrative) 처리: 첫 번째 문항에서만 보여줍니다.
-    const narrativeEl = document.getElementById('narrative');
-    if (narrativeEl) {
-      narrativeEl.style.display = (index === 0) ? 'block' : 'none';
-    }
 
     uiElements.question.textContent = currentQuestion.q;
     uiElements.optionsList.innerHTML = '';
@@ -202,21 +199,44 @@ document.addEventListener('DOMContentLoaded', async function () {
   }
 
   uiElements.viewResultBtn.addEventListener('click', calculateAndShowResult);
+  
+  if (uiElements.startBtn) {
+    uiElements.startBtn.addEventListener('click', () => {
+      if (uiElements.introSection) uiElements.introSection.hidden = true;
+      uiElements.quizSection.hidden = false;
+      renderQuestion(0);
+      updateUrlWithQuestion(0);
+    });
+  }
+
   uiElements.restartBtn.addEventListener('click', () => {
     window.location.href = window.location.pathname;
   });
 
   // 데이터를 불러와서 퀴즈를 시작합니다.
   try {
-    // 1. 공통 결과 설정 로드 (이미지, 설명)
-    const configResponse = await fetch('../data/result_config.json');
+    // 1. 공통 결과 설정 및 테스트 메타 데이터 로드
+    const [configResponse, metaResponse] = await Promise.all([
+      fetch('../data/result_config.json'),
+      fetch('../data/tests_meta.json')
+    ]);
+    
     const configData = await configResponse.json();
+    const metaData = await metaResponse.json();
+    
     allResultImages = configData.resultImages || {};
     resultDescriptions = configData.resultDescriptions || {};
+    
+    const currentMeta = metaData.find(m => m.id === currentTestId);
 
     // 2. 현재 테스트 문항 데이터 로드
     const testResponse = await fetch(`../data/tests/${currentTestId}.json`);
     currentTestObject = await testResponse.json();
+
+    // 인트로 화면 타이틀 (필요한 경우에만 유지하거나 수동으로 둘 수 있음)
+    if (uiElements.introTitle && !uiElements.introTitle.textContent.trim()) {
+      uiElements.introTitle.textContent = currentTestObject.title || (currentMeta ? currentMeta.title : "테스트");
+    }
 
     // 상단에 테스트 제목 표시
     let titleEl = document.getElementById('quiz-title-display');
@@ -233,15 +253,26 @@ document.addEventListener('DOMContentLoaded', async function () {
     testQuestions = currentTestObject.questions || [];
     gameState.userAnswers = Array(testQuestions.length).fill(null);
     
-    // URL에 질문 번호(q)가 있다면 해당 번호부터 시작합니다.
+    // URL에 질문 번호(q)가 있다면 해당 번호부터 시작합니다. (인트로 건너뜀)
     const questionParam = new URLSearchParams(window.location.search).get('q');
     if (questionParam) {
       const startIndex = parseInt(questionParam) - 1;
       gameState.currentQuestionIndex = Math.max(0, Math.min(startIndex, testQuestions.length - 1));
+      
+      if (uiElements.introSection) uiElements.introSection.hidden = true;
+      uiElements.quizSection.hidden = false;
+      renderQuestion(gameState.currentQuestionIndex);
+    } else {
+      // 질문 파라미터가 없으면 인트로를 보여줍니다.
+      if (uiElements.introSection) {
+        uiElements.introSection.hidden = false;
+        uiElements.quizSection.hidden = true;
+      } else {
+        // 인트로 섹션이 없으면 바로 퀴즈 시작
+        uiElements.quizSection.hidden = false;
+        renderQuestion(0);
+      }
     }
-    
-    // 첫 번째 질문 렌더링
-    renderQuestion(gameState.currentQuestionIndex);
   } catch (error) {
     console.error('데이터를 불러오지 못했습니다:', error);
   }
