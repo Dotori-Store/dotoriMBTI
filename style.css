@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'KakaoBigFont';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2503@1.0/KakaoBigSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KakaoBigFont';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2503@1.0/KakaoBigSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -16,22 +30,25 @@ time, mark, audio, video, select, button, input {
   border: 0;
   font-style: normal;
   line-height: 1.4em;
-  font-family: 'Pretendard GOV', '-apple-system', 'BlinkMacSystemFont', 'Apple SD Gothic Neo', 'Segoe UI', 'Roboto', sans-serif;
+  font-family: 'KakaoBigFont', /*'Pretendard GOV',*/ '-apple-system', 'BlinkMacSystemFont', 'Apple SD Gothic Neo', 'Segoe UI', 'Roboto', sans-serif;
 }
 
 body {
-  background: #ede9dd;
   min-height: 100vh;
 }
 
+h2, h3, h4, h5, h6, p, span, li, button {
+  /* 부드러운 폰트 */
+  transform: rotate(0.04deg); 
+}
+
 .site-main {
-  max-width: 640px;
+  max-width: 480px;
   margin: 0 auto;
   min-height: 100vh;
   background: #fff;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0 40px rgba(0,0,0,0.05);
 }
 
 img { max-width: 100%; vertical-align: top; }
@@ -40,37 +57,28 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 48px 0 16px 0;
+  padding: 24px 0;
+  margin-bottom: 16px;
 }
 
 h1 {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin: 0;
-  font-size: 24px;
-  font-weight: 700;
-  font-family: 'SchoolSafetyStarrySky', sans-serif;
-}
-
-h1 i {
-  font-size: 18px;
-}
-
-h1 i:first-child {
-  transform: scaleX(-1);
+  display: block;
+  width: 146px;
+  height: 18px;
 }
 
 main {
-  max-width: 640px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 16px;
 }
 
 footer {
   text-align: center;
-  padding: 32px 0;
-  font-size: 14px;
+  padding: 48px 16px;
+}
+
+footer p {
+  font-size: 11px;
   color: #888;
 }
 
@@ -125,27 +133,6 @@ footer {
   margin-top: auto;
 }
 
-.quiz-narrative {
-  background: #fff;
-  border-left: 4px solid #8b572a;
-  padding: 1rem;
-  margin: 1.5rem 0;
-  font-size: 1.05rem;
-  line-height: 1.6;
-  color: #444;
-  border-radius: 0 8px 8px 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-.quiz-main-title {
-  font-size: 1.1rem;
-  color: #8b572a;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid #e0dacc;
-  display: inline-block;
-}
 
 /* 퀴즈/옵션 */
 /* 숨김은 HTML의 `hidden` 속성으로 제어합니다 */
@@ -210,58 +197,4 @@ button {
   font-weight: 600;
 }
 
-/* 인트로 화면 */
-#intro {
-  text-align: center;
-  padding: 2rem 1rem;
-  background: white;
-  border-radius: 20px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-  margin: 20px 0;
-}
 
-.intro-title {
-  font-size: 1.8rem;
-  font-weight: 800;
-  color: #333;
-  margin-bottom: 1.5rem;
-  word-break: keep-all;
-}
-
-.intro-content {
-  font-size: 1.1rem;
-  color: #666;
-  line-height: 1.6;
-  margin-bottom: 2.5rem;
-  word-break: keep-all;
-  text-align: left;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.intro-content p {
-  margin-bottom: 1rem;
-}
-
-.start-btn {
-  background: #8b572a;
-  color: white;
-  font-size: 1.2rem;
-  font-weight: 700;
-  padding: 1rem 3rem;
-  border-radius: 50px;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s, background-color 0.2s;
-  box-shadow: 0 4px 15px rgba(139, 87, 42, 0.3);
-}
-
-.start-btn:hover {
-  background: #7a4d25;
-  transform: translateY(-2px);
-}
-
-.start-btn:active {
-  transform: translateY(0);
-}
