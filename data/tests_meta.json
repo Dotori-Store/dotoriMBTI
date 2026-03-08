@@ -2,31 +2,42 @@
   {
     "id": "office_party",
     "title": "회식 자리 성격 테스트",
-    "desc": "회식 상황에서의 내 선택으로 알아보는 나의 술자리 캐릭터!"
+    "desc": "회식 상황에서의 내 선택으로 알아보는 나의 술자리 캐릭터!",
+    "thumbnail": "images/thumb-dummy.jpg",
+    "recommended": true
   },
   {
     "id": "travel_style",
     "title": "나의 여행 스타일은?",
-    "desc": "낯선 곳으로 떠났을 때 나타나는 나의 본모습은?"
+    "desc": "낯선 곳으로 떠났을 때 나타나는 나의 본모습은?",
+    "thumbnail": "images/thumb-dummy.jpg",
+    "recommended": true
   },
   {
     "id": "weekend_life",
     "title": "주말을 보내는 나의 자세",
-    "desc": "기다리고 기다리던 주말! 당신은 무엇을 하나요?"
+    "desc": "기다리고 기다리던 주말! 당신은 무엇을 하나요?",
+    "thumbnail": "images/thumb-dummy.jpg",
+    "recommended": true
   },
   {
     "id": "study_type",
     "title": "공부할 때 나의 모습",
-    "desc": "집중의 순간, 나는 어떤 타입일까?"
+    "desc": "집중의 순간, 나는 어떤 타입일까?",
+    "thumbnail": "images/thumb-dummy.jpg",
+    "recommended": true
   },
   {
     "id": "mystery_watch",
     "title": "사건 현장: 시계의 비밀 (추리 테스트)",
-    "desc": "당신은 예리한 관찰력을 가진 탐정일까요? 사건 현장에서 당신의 추리력을 테스트해보세요!"
+    "desc": "당신은 예리한 관찰력을 가진 탐정일까요?",
+    "thumbnail": "images/thumb-dummy.jpg",
+    "recommended": true
   },
   {
     "id": "mystery_wallet",
     "title": "사건 현장: 사라진 지갑의 비밀 (추리 테스트)",
-    "desc": "카페에서 감쪽같이 사라진 지갑. 단서 속에 숨겨진 진실을 찾아낼 수 있을까요? 당신의 추리 본능을 시험해보세요!"
+    "desc": "카페에서 사라진 지갑, 단서 속에 숨겨진 진실에 도전해보세요.",
+    "thumbnail": "images/thumb-dummy.jpg"
   }
 ]

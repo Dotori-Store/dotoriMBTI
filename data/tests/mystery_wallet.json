@@ -10,45 +10,10 @@
       ]
     },
     {
-      "q": "피해자는 '잠깐 화장실에 다녀왔다'고 합니다. 당신의 판단은?",
-      "options": [
-        { "text": "자리를 비운 정확한 시간을 확인한다", "scores": { "DET_WALLET_HIGH": 1 } },
-        { "text": "그 사이 누군가 훔쳤을 것이라 단정한다", "scores": { "DET_WALLET_MID": 1 } }
-      ]
-    },
-    {
-      "q": "옆 테이블 손님이 급히 나갔다는 증언이 나왔습니다. 어떻게 할까요?",
-      "options": [
-        { "text": "결제 기록과 CCTV로 이동 경로를 확인한다", "scores": { "DET_WALLET_HIGH": 1 } },
-        { "text": "급히 나간 손님을 범인으로 의심한다", "scores": { "DET_WALLET_LOW": 1 } }
-      ]
-    },
-    {
       "q": "테이블 아래에서 동전 하나가 발견되었습니다. 당신의 생각은?",
       "options": [
         { "text": "몸싸움이나 급한 움직임의 흔적일 수 있다", "scores": { "DET_WALLET_MID": 1 } },
         { "text": "우연히 떨어진 것일 뿐이다", "scores": { "DET_WALLET_LOW": 1 } }
-      ]
-    },
-    {
-      "q": "피해자는 카드 사용 알림이 아직 없다고 말합니다. 이 정보는?",
-      "options": [
-        { "text": "절도 목적이 아닐 가능성을 시사한다", "scores": { "DET_WALLET_HIGH": 1 } },
-        { "text": "아직 범인이 사용하지 않은 것뿐이다", "scores": { "DET_WALLET_MID": 1 } }
-      ]
-    },
-    {
-      "q": "직원은 '오늘은 손님이 많지 않았다'고 합니다. 당신은?",
-      "options": [
-        { "text": "그렇다면 용의자 범위가 좁아진다", "scores": { "DET_WALLET_HIGH": 1 } },
-        { "text": "그래도 범인은 외부인일 것이다", "scores": { "DET_WALLET_LOW": 1 } }
-      ]
-    },
-    {
-      "q": "의자 위치가 조금 어긋나 있습니다. 이 상황에서 중요한 것은?",
-      "options": [
-        { "text": "의자의 이동 방향과 거리", "scores": { "DET_WALLET_HIGH": 1 } },
-        { "text": "의자의 디자인과 브랜드", "scores": { "DET_WALLET_LOW": 1 } }
       ]
     },
     {

@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         // 약간의 지연 후 자동으로 다음 문항으로 넘어갑니다.
         setTimeout(() => {
           goToNextStep();
-        }, 300);
+        }, 100);
       });
 
       listItem.appendChild(optionButton);

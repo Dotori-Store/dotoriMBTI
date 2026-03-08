@@ -6,6 +6,8 @@
   <title>도토리 브레인 연구소</title>
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/projectnoonnu/2503@1.0/KakaoBigSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/projectnoonnu/2503@1.0/KakaoBigSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./css/content.css">
 </head>
@@ -17,9 +19,20 @@
     </header>
 
     <main>
-      <!-- 시작 화면: 테스트 목록 (바둑판) -->
-      <section id="tests">
-        <ul id="testsList"></ul>
+      <!-- 추천 테스트 영역id="recommended" -->
+      <section  class="main-section">
+        <h2 class="section-title">✨ 추천 테스트</h2>
+        <div class="swiper">
+          <ul id="recommendedList" class="best-grid swiper-wrapper"><!--id="recommendedList"-->
+            
+          </ul>
+        </div>
+      </section>
+
+      <!-- 일반 테스트 목록 -->
+      <section id="tests" class="main-section">
+        <h2 class="section-title">🔍 더 많은 테스트</h2>
+        <ul id="testsList" class="quiz-grid"></ul>
       </section>
     </main>
 

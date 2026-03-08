@@ -30,17 +30,21 @@ time, mark, audio, video, select, button, input {
   border: 0;
   font-style: normal;
   line-height: 1.4em;
-  font-family: 'KakaoBigFont', /*'Pretendard GOV',*/ '-apple-system', 'BlinkMacSystemFont', 'Apple SD Gothic Neo', 'Segoe UI', 'Roboto', sans-serif;
+  font-family: 'KakaoBigFont', '-apple-system', 'BlinkMacSystemFont', 'Apple SD Gothic Neo', 'Segoe UI', 'Roboto', sans-serif;
 }
 
 body {
   min-height: 100vh;
 }
 
-h2, h3, h4, h5, h6, p, span, li, button {
+* {box-sizing: border-box;} 
+
+h2, h3, h4, h5, h6, p, span, button {
   /* 부드러운 폰트 */
   transform: rotate(0.04deg); 
 }
+
+img { max-width: 100%; vertical-align: top; }
 
 .site-main {
   max-width: 480px;
@@ -49,25 +53,28 @@ h2, h3, h4, h5, h6, p, span, li, button {
   background: #fff;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden; /* 가로 스크롤 방지 및 슬라이더 계산 안정화 */
 }
-
-img { max-width: 100%; vertical-align: top; }
 
 header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 24px 0;
+  padding: 20px 0 10px 0;
   margin-bottom: 16px;
 }
 
-h1 {
+h1.site-logo {
   display: block;
-  width: 146px;
-  height: 18px;
+  width: 150px;
+}
+
+h1.site-logo img {
+  display: block;
 }
 
 main {
+  width: 100%;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -92,45 +99,107 @@ footer p {
   text-align: center;
 }
 
+.main-section {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  padding-left: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 추천 영역 하이라이트 */
+#recommended .quiz-grid li {
+  background: #fdf6e3;
+  border-color: #eee8d5;
+}
+
+.best-grid {
+  /* display: flex;
+  gap: 12px;
+  list-style: none; */
+}
+
+.best-grid li {
+  /* width: 64%;
+  flex-shrink: 0; */
+}
+
 /* 테스트 리스트 - 바둑판(grid) */
-#testsList {
+.quiz-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-#testsList li {
+.quiz-grid li {
   background: #fafafa;
   border: 1px solid #eee;
-  padding: 1rem;
-  border-radius: 8px;
+  padding: 0.75rem;
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.quiz-grid li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
 .quiz-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-align: left;
   border: none;
   background: transparent;
   cursor: pointer;
   padding: 0;
-  font-size: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.quiz-thumb {
+  width: 100%;
+  aspect-ratio: 1.6 / 1;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+}
+
+.quiz-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .quiz-title {
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  line-height: 1.3;
 }
 
 .quiz-desc {
-  color: #666;
-  font-size: 0.95rem;
-  margin-top: auto;
+  color: #777;
+  font-size: 0.85rem;
+  margin-top: 2px;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 
