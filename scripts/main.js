@@ -37,8 +37,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         <div class="quiz-thumb">
           <img src="${testData.thumbnail || ''}" alt="${testData.title || ''}">
         </div>
-        <div class="quiz-title">${testData.title || '테스트'}</div>
-        <div class="quiz-desc">${testData.desc || ''}</div>`;
+        <div class="quiz-title"><p>${testData.title || '테스트'}</p></div>
+        <div class="quiz-desc"><p>${testData.desc || ''}</p></div>`;
 
       listItem.appendChild(testCardLink);
       return listItem;
@@ -75,10 +75,10 @@ document.addEventListener('DOMContentLoaded', async function () {
   // 렌더링이 완료된 후 Swiper를 초기화합니다 (동적 로딩 시 발생하는 NaN 문제를 방지합니다).
   if (uiElements.swiperContainer) {
     new Swiper('.swiper', {
-      slidesPerView: 'auto', // CSS에서 너비를 조절할 수 있도록 auto로 변경
-      centeredSlides: true,
+      slidesPerView: 1.4, 
+      //centeredSlides: true,
       loop: true,
-      spaceBetween: 20,
+      spaceBetween: 12,
       grabCursor: true,
       speed: 800,
       rewind: true,
