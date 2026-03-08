@@ -75,12 +75,16 @@ document.addEventListener('DOMContentLoaded', async function () {
   // 렌더링이 완료된 후 Swiper를 초기화합니다 (동적 로딩 시 발생하는 NaN 문제를 방지합니다).
   if (uiElements.swiperContainer) {
     new Swiper('.swiper', {
-      slidesPerView: 1.3,
+      slidesPerView: 'auto', // CSS에서 너비를 조절할 수 있도록 auto로 변경
       centeredSlides: true,
       loop: true,
-      speed: 900,
       spaceBetween: 20,
-      watchSlidesProgress: true,
+      grabCursor: true,
+      speed: 800,
+      rewind: true,
+      /*observer: true,
+      observeParents: true,
+      watchSlidesProgress: true,*/
       navigation: {
         nextEl: '#swiper-next',
         prevEl: '#swiper-prev',

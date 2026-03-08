@@ -126,8 +126,8 @@ footer p {
 }
 
 .best-grid li {
-  /* width: 64%;
-  flex-shrink: 0; */
+  width: 64%;
+  flex-shrink: 0;
 }
 
 /* 테스트 리스트 - 바둑판(grid) */
