@@ -81,10 +81,6 @@ document.addEventListener('DOMContentLoaded', async function () {
       spaceBetween: 12,
       grabCursor: true,
       speed: 800,
-      rewind: true,
-      /*observer: true,
-      observeParents: true,
-      watchSlidesProgress: true,*/
       navigation: {
         nextEl: '#swiper-next',
         prevEl: '#swiper-prev',
